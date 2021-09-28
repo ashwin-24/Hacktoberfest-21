@@ -1,0 +1,443 @@
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
+
+/* card aninamtions */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #000000;
+  /*   fixing horizontal scrolling */
+  overflow-x: hidden;
+}
+
+.head-section {
+  box-shadow: 0 8px 6px -6px black;
+  background-image: url("./img/banner.png");
+  color: #ffffff;
+}
+
+/* .head-section{
+    box-shadow: 0 8px 6px -6px black;
+    background-image: url("./img/banner.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    image-rendering: auto;
+    max-width: 400em;;
+    color: #000000;
+    border-radius: 20px;
+
+} */
+
+body::before,
+body::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header-img {
+  height: 20px;
+  background-color: black;
+}
+
+/* mobile responsive  */
+@media (max-width: 768px) {
+  .header-img {
+    height: 95px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header-img {
+    height: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .header-img {
+    height: 48px;
+  }
+}
+@media (max-width: 320px) {
+  .header-img {
+    height: 30px;
+  }
+}
+
+.icon {
+  color: black;
+}
+
+.lts-1px {
+  letter-spacing: 1px;
+}
+.lts-2px {
+  letter-spacing: 2px;
+}
+
+.w-full {
+  width: 100%;
+  height: calc(100% - 50%);
+}
+
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(white),
+    to(black)
+  );
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #000000;
+  margin: 0;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+a, a: hover, a: visited, a: focus, textarea {
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+.github-main {
+  display: block;
+
+  padding: 50px 0;
+  position: relative;
+}
+
+.github-wrapper {
+  background: #fff;
+  max-width: 320px;
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 40px;
+  /* border-radius: 0px 0px 30px 0px; */
+  -webkit-box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.5);
+  font-size: 0;
+}
+
+.github-banner canvas {
+  display: block;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 40px 40px 0 0;
+}
+
+.github-dp {
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  position: absolute;
+  top: -68px;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+.github-dp canvas {
+  display: block;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.github-name {
+  display: block;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  margin-top: 1px;
+}
+
+.github-name h2 {
+  margin: 2px auto;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  color: #2d303a;
+  margin: 0;
+}
+
+.github-name h2 span {
+  display: block;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.github-followers-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 5;
+  position: relative;
+}
+
+.github-follow h2 span {
+  color: #666;
+  font-size: 13px;
+  display: block;
+  margin-top: 5px;
+  font-weight: 300;
+}
+.github-button {
+  padding: 2px;
+  display: block;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.github-button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 240px;
+  height: 50px;
+  background: #e8c411;
+  color: #000;
+  margin: 0 auto;
+  border-radius: 40em;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+.github-bio p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  text-align: left;
+  display: block;
+  scroll-behavior: auto;
+}
+
+.github-details {
+  display: block;
+  padding: 100px 30px 20px;
+  position: relative;
+}
+
+.footer {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  appearance: none;
+  font-family: sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  /* background: #eee url("./img/task1bg.png") no-repeat; */
+  /* hey */
+  /* background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+  background: #0a0631;
+  background: -webkit-linear-gradient(top left, #0a0631, #46d1d1);
+  background: -moz-linear-gradient(top left, #0a0631, #46d1d1);
+  background: linear-gradient(to bottom right, #0a0631, #46d1d1);
+  background-attachment: fixed;
+}
+#windowBox {
+  overflow-y: auto;
+  position: relative;
+  padding: 3rem;
+  width: 100vw;
+  backdrop-filter: blur(3px);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.85);
+}
+.cardSpace {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  transform: translateY(calc(50% - 125px));
+  border-radius: 10px;
+  position: relative;
+  background: rgba(0, 0, 150, 0.5);
+  box-shadow: -5px 5px 10px rgba(255, 255, 255, 0.4) inset,
+    5px -5px 10px rgba(0, 0, 0, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.cardHeader {
+  width: 100%;
+  min-height: 40px;
+  padding-bottom: 0.5rem;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+.profileImg {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-top: -40px;
+  background: #fff;
+  border-radius: 100%;
+  border: 5px solid #337;
+  cursor: pointer;
+  box-shadow: 0 0 5px #000;
+}
+h1 {
+  padding: 0.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 900;
+}
+.ageLocation {
+  background: #fff;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #337;
+  box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.funct {
+  padding: 2rem 0.5rem 1rem 0.5rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2rem;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.funct::after {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  content: "";
+  left: 50%;
+  margin-left: -50px;
+}
+.circles {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.boxCircles {
+  font-size: 0.7rem;
+  text-align: center;
+  color: #fff;
+  /* txt-shadow: -1px 1px 3px rgba(0,0,0,0.5); */
+  font-weight: 600;
+}
+.rounded {
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  padding-top: 0.3rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roundedImg {
+  width: 45px;
+  height: auto;
+}
+.user-yourName {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bg-cover {
+  background-size: cover !important;
+}
